@@ -8,9 +8,13 @@ eureka:
 spring:
    application:
       name: config-service
-      
-spring: 
    cloud:
       config:
          server:
-            uri:     
+            git:
+               uri: https://github.com/653306065/spring-cloud-study/tree/master/config-service/src/main/resources/config
+            searchPaths: respo
+            username:
+            password:
+      label: master          
+                 
