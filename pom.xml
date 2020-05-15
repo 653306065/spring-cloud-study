@@ -66,5 +66,6 @@
   
 	<module>first-service</module>
     <module>consumer-service</module>
+    <module>zuul-service</module>
   </modules>
 </project>
