@@ -1,0 +1,16 @@
+server:
+   port: 10005
+   
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://127.0.0.1:10001/eureka/
+spring:
+   application:
+      name: config-service
+      
+spring: 
+   cloud:
+      config:
+         server:
+            uri:     
