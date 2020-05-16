@@ -8,7 +8,10 @@ eureka:
       registerWithEureka: false
       fetchRegistry: false
       seviceUrl:
-         defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/   
+         defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+   server:
+      responseCacheUpdateIntervalMs: 3000 
+      eviction-interval-timer-in-ms: 3000        
 
 spring:
   application:
