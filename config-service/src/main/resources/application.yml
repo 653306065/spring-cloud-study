@@ -12,8 +12,8 @@ spring:
       config:
          server:
             git:
-               uri: https://github.com/653306065/spring-cloud-study/tree/master/config-service/src/main/resources/config
-            searchPaths: respo
+               uri: https://github.com/653306065/spring-cloud-config
+            searchPaths: 
             username:
             password:
       label: master          
