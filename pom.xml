@@ -68,5 +68,6 @@
     <module>consumer-service</module>
     <module>zuul-service</module>
     <module>config-service</module>
+    <module>gateway-service</module>
   </modules>
 </project>
