@@ -17,7 +17,7 @@ public class GetDataServcie {
 	
 	@HystrixCommand(fallbackMethod = "getDataError")
 	public String getData() {
-		return restTemplate.getForObject("http://FIRST-SERVICE/getData/getValue", String.class);
+		return restTemplate.getForObject("http://first-service/getData/getValue", String.class);
 	}
 	
 	public String getDataError() {

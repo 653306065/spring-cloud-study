@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.study.spring.consumer.service.hystrix.FirstServiceHystrix;
 
-@FeignClient(name = "FIRST-SERVICE",fallback = FirstServiceHystrix.class)
+@FeignClient(name = "first-service",fallback = FirstServiceHystrix.class)
 public interface FirstServiceFeign {
 
     @RequestMapping(value = "/getData/getValue",method = RequestMethod.GET)
-	public String getValue();
+    String getValue();
 }

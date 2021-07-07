@@ -1,16 +1,18 @@
-   
-eureka:
-   client:
-      serviceUrl:
-         defaultZone: http://127.0.0.1:10001/eureka/
-
 spring:
    application:
       name: first-service 
    cloud:
-      config:
-          label: master
-          profile:    
-          discovery:
-             enabled: true
-             serviceId: config-service        
+     nacos:
+       config:
+         server-addr: 127.0.0.1:8848
+         file-extension: yml
+         name: ${spring.application.name}
+         group: test
+         timeout: 1000
+         max-retry: 10
+         refresh-enabled: true
+         namespace: 639d6b08-a79c-4d93-9f2e-974e68823cd1
+       discovery:
+         server-addr: 127.0.0.1:8848
+         group: test
+         namespace: 639d6b08-a79c-4d93-9f2e-974e68823cd1
